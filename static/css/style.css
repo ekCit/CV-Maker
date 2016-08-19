@@ -1,0 +1,36 @@
+body {
+    background-color: antiquewhite;
+}
+
+footer {
+}
+
+aside {
+    position: fixed;
+    right: 0;
+    top: 30%;
+}
+
+.container {
+    position: relative;
+    top:20px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    box-shadow: 1px 1px 4px gray;
+    padding: 10px;
+    width: 1050px;
+    height: 1485px;
+    background-color: white;
+}
+
+.side {
+    position: absolute;
+    width: 40%;
+}
+
+.main {
+    position: relative;;
+    width: 60%;
+}
+
+
