@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont">&#xea39;</i>
+                    <div class="name">account_circle</div>
+                    <div class="code">&amp;#xea39;</div>
+                    <div class="fontclass">.accountcircle</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xeac9;</i>
+                    <div class="name">card_travel</div>
+                    <div class="code">&amp;#xeac9;</div>
+                    <div class="fontclass">.cardtravel</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xeaf4;</i>
+                    <div class="name">content_paste</div>
+                    <div class="code">&amp;#xeaf4;</div>
+                    <div class="fontclass">.contentpaste</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xec7a;</i>
+                    <div class="name">phone</div>
+                    <div class="code">&amp;#xec7a;</div>
+                    <div class="fontclass">.phone</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xec7b;</i>
+                    <div class="name">phone_android</div>
+                    <div class="code">&amp;#xec7b;</div>
+                    <div class="fontclass">.phoneandroid</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xed32;</i>
+                    <div class="name">stars</div>
+                    <div class="code">&amp;#xed32;</div>
+                    <div class="fontclass">.stars</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xed1d;</i>
+                    <div class="name">star_outline</div>
+                    <div class="code">&amp;#xed1d;</div>
+                    <div class="fontclass">.staroutline</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xed1b;</i>
+                    <div class="name">star</div>
+                    <div class="code">&amp;#xed1b;</div>
+                    <div class="fontclass">.star</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xec88;</i>
+                    <div class="name">person</div>
+                    <div class="code">&amp;#xec88;</div>
+                    <div class="fontclass">.person</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xedac;</i>
+                    <div class="name">work</div>
+                    <div class="code">&amp;#xedac;</div>
+                    <div class="fontclass">.work</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xebf9;</i>
+                    <div class="name">library_books</div>
+                    <div class="code">&amp;#xebf9;</div>
+                    <div class="fontclass">.librarybooks</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xebca;</i>
+                    <div class="name">import_contacts</div>
+                    <div class="code">&amp;#xebca;</div>
+                    <div class="fontclass">.importcontacts</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xeaf8;</i>
+                    <div class="name">create</div>
+                    <div class="code">&amp;#xeaf8;</div>
+                    <div class="fontclass">.create</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xead7;</i>
+                    <div class="name">comment</div>
+                    <div class="code">&amp;#xead7;</div>
+                    <div class="fontclass">.comment</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xeab6;</i>
+                    <div class="name">call</div>
+                    <div class="code">&amp;#xeab6;</div>
+                    <div class="fontclass">.call</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#x3488;</i>
+                    <div class="name">微信</div>
+                    <div class="code">&amp;#x3488;</div>
+                    <div class="fontclass">.weixin</div>
+                </li>
+            
+        </ul>
+
+
+        <div class="helps">
+            第一步：使用font-face声明字体
+            <pre>
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+</pre>
+第二步：定义使用iconfont的样式
+            <pre>
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+</pre>
+第三步：挑选相应图标并获取字体编码，应用于页面
+<pre>
+&lt;i class="iconfont"&gt;&amp;#x33;&lt;/i&gt;
+</pre>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,21 +1,42 @@
+@font-face {font-family: 'iconfont';
+    src: url('/static/fonts/iconfont.eot'); /* IE9*/
+    src: url('/static/fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/static/fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('/static/fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('/static/fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:1.1em;font-style:normal;
+    color:inherit;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
-    line-height: 1.5;
-
+    color: #666;
 
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: 500;
     color: #607d8b;
+    line-height: 1.5;
 }
+
+
 
 li, ul{
     list-style: none;
+    padding-left: 0px;
 }
+
 
 hr {
     margin-bottom: 8px;
@@ -35,9 +56,24 @@ aside {
     top: 30%;
 }
 
+p {
+    line-height: 1.5;
+}
+
+
 .me {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.info-list {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.left-label {
+    display: inline-block;
+    width: 120px;
 }
 
 .portrait {
@@ -59,7 +95,7 @@ aside {
     margin-top: 20px;
     margin-bottom: 120px;
     box-shadow: 1px 1px 4px gray;
-    padding: 30px;
+    padding: 40px;
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -71,23 +107,24 @@ aside {
 
 .side {
     position: absolute;
-    width: 400px;
-    height: 100%;
+    width: 360px;
+    
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .main {
+    
     position: relative;;
-    margin-left: 400px;
-    height: 100%;
+    margin-left: 360px;
+    min-height: 100%;
     padding-left: 20px;
     padding-right: 20px;
 
 }
 
 .info-unit {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
