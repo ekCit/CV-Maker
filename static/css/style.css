@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5 {
 
 
 
-li, ul{
+.info-list, .progress-list{
     list-style: none;
     padding-left: 0px;
 }
@@ -50,20 +50,57 @@ body {
 footer {
 }
 
-aside {
-    position: fixed;
-    right: 0;
-    top: 30%;
-}
-
 p {
     line-height: 1.5;
 }
+
+progress {
+    background-color: #f6f6f6;
+    display: inline;
+    width: 195px;
+    height: 1em;
+
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e0eaf0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #708d9b;
+}
+
+progress::-moz-progress-bar {
+    background-color: #e0eaf0;
+
+}
+
+progress::-moz-progress-value {
+    background-color: #708d9b;
+}
+
+.progress-list {
+    line-height: 2;
+}
+
 
 
 .me {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.weixin{
+    margin-top: 40px;
+    background-color: #e0eaf0;   
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.weixin img{
+    width: 200px;
 }
 
 .info-list {
@@ -92,8 +129,6 @@ p {
 .container {
     position: relative;
     margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 120px;
     box-shadow: 1px 1px 4px gray;
     padding: 40px;
     padding-top: 50px;

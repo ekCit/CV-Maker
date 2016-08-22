@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="static/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="static/js/jspdf.js"></script>
+    <script src="static/js/cell.js"></script>
+    <script src="static/js/png.js"></script>
+    <script src="static/js/zlib.js"></script>
+    <script src="static/js/png_support.js"></script>
+    <script src="static/js/addimage.js"></script>
     <script src="static/js/from_html.js"></script>
     <script src="static/js/autoprint.js"></script>
     <script src="static/js/standard_fonts_metrics.js"></script>
@@ -13,14 +18,6 @@
     <script src="static/js/script.js"></script>
 </head>
 <body>
-    <aside>
-        <ul>
-            <li><button name="button" onClick="generatePdf()" >生成PDF</button></li>
-            <li><button name="button" >下载简历页面</button></li>
-            <li><button name="button" >下载word版本</button></li>
-
-        </ul>
-    </aside>
     <div class="container" id="cv">
         <div class="side">
             <div class="me">
@@ -32,59 +29,83 @@
                 <h2><i class="iconfont">&#xec88;</i> 基本信息</h2>
                 <hr>
                 <ul class="info-list">
-                    <li><label class="left-label">姓名：</label> XXX</li>
-                    <li><label class="left-label">学历：</label> 本科</li>
-                    <li><label class="left-label">毕业院校：</label> 北京邮电大学</li>
-                    <li><label class="left-label">毕业年份：</label> 2017</li>
+                    <li><label class="left-label">姓名</label>XXX</li>
+                    <li><label class="left-label">学历</label>本科</li>
+                    <li><label class="left-label">毕业院校</label>北京邮电大学</li>
+                    <li><label class="left-label">毕业年份</label>2017</li>
                 </ul>
             </div>
             <div class="contact info-unit">
                 <h2><i class="iconfont">&#xeab6;</i> 联系方式</h2>
                 <hr>
                 <ul class="info-list">
-                    <li><label class="left-label">手机：</label> 182XXXXXXXX</li>
-                    <li><label class="left-label">邮箱：</label> crmrc2014@gmail.com</li>
-                    <li><label class="left-label">个人主页：</label> exit-tixe.me</li>
-                    <li><label class="left-label">Github：</label> github.com/ekCit</li>
+                    <li><label class="left-label">手机</label>182XXXXXXXX</li>
+                    <li><label class="left-label">邮箱</label>crmrc2014@gmail.com</li>
+                    <li><label class="left-label">个人主页</label>exit-tixe.me</li>
+                    <li><label class="left-label">Github</label>github.com/ekCit</li>
                 </ul>
             </div>
-            <div class="Skill info-unit">
+            <div class="skill info-unit">
                 <h2><i class="iconfont">&#xed1d;</i> 技能点</h2>
                 <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
+                <div>
+                    <ul class="progress-list">
+                        <li><label class="left-label">Python</label> <progress value="80" max="100"></progress> </li>
+                        <li><label class="left-label">html/css</label> <progress value="70" max="100"></progress> </li>
+                        <li><label class="left-label">Javascript</label> <progress value="60" max="100"></progress> </li>
+                        <li><label class="left-label">机器学习</label> <progress value="60" max="100"></progress> </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="Code info-unit">
+            <div class="code info-unit">
                 <h2><i class="iconfont">&#x3488;</i> 个人微信</h2>
                 <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
+                <div class="weixin">
+                    <img src="/static/image/weixin.png" alt="">
+                </div>
             </div>
+
         </div>
         <div class="main">
             <div class="education info-unit">
                 <h2><i class="iconfont">&#xebca;</i> 教育经历</h2>
                 <hr>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <ul>
+                    <li>
+                        <h3>北京邮电大学 - 网络工程专业（本科）2012-2017</h3>
+                        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </p>
+                    </li>
+                    
+                </ul>
             </div>
             <div class="work info-unit">
                 <h2><i class="iconfont">&#xeac9;</i> 工作经历</h2>
                 <hr>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <ul>
+                    <li>
+                        <h3>实验楼－课程内容（实习）</h3>
+                        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 </p>
+                    </li>
+                    
+                </ul>
             </div>
             <div class="project info-unit">
-                <h2><i class="iconfont">&#xeaf4;</i> 项目经历</h2>
+                <h2><i class="iconfont">&#xeaf4;</i> 个人项目</h2>
                 <hr>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <ul>
+                    <li>
+                        <h3>基于 Qt 5 的文本编辑器</h3>
+                        <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 </p>
+                    </li>
+                    
+                </ul>
             </div>
             
         </div>
