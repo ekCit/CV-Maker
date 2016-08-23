@@ -30,7 +30,10 @@ h1, h2, h3, h4, h5 {
     line-height: 1.5;
 }
 
-
+.progress-list div {
+    width: 100%;
+    margin-left: 200px;
+}
 
 .info-list, .progress-list{
     list-style: none;
@@ -57,7 +60,7 @@ p {
 progress {
     background-color: #f6f6f6;
     display: inline;
-    width: 195px;
+    /*width: 195px;*/
     height: 1em;
 
 }
