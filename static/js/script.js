@@ -35,9 +35,26 @@ jQuery(document).ready(function($) {
 
     $('.info-header').hover(function() {
         /* Stuff to do when the mouse enters the element */
+        $(this).children('.unit-remove').css('visibility', 'visible');
+        $(this).children('.item-add').css('visibility', 'visible');
 
     }, function() {
         /* Stuff to do when the mouse leaves the element */
+        $(this).children('.unit-remove').css('visibility', 'hidden');
+        $(this).children('.item-add').css('visibility', 'hidden');
+    });
+
+    $('.unit-remove').click(function(event) {
+        $(this).closest(".info-unit").remove();
+    });
+
+    $('.item-add').click(function(event) {
+        var unit = $(this).closest(".info-unit");
+        if (unit.children('ul')){
+            var list = unit.children('ul');
+            var clone = list.children('li:first-child').clone(true);
+            list.append(clone);
+        }
 
     });
 });

@@ -181,7 +181,7 @@ progress::-moz-progress-value {
 .side {
     position: absolute;
     width: 360px;
-    
+    background-color: whitesmoke;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -203,6 +203,7 @@ progress::-moz-progress-value {
 .info-header .unit-remove {
     float: right;
     margin-left: 20px;
+    visibility: hidden;
 
 }
 
@@ -210,6 +211,7 @@ progress::-moz-progress-value {
     float: right;
     margin-left: 20px;
     margin-right: 2px;
+    visibility: hidden;
     
 }
 
