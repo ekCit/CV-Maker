@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1471761507'); /* IE9*/
-  src: url('iconfont.eot?t=1471761507#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1471761507') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1471761507') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1471761507#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1471935781'); /* IE9*/
+  src: url('iconfont.eot?t=1471935781#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1471935781') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1471935781') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1471935781#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -31,3 +31,28 @@
 .icon-comment:before { content: "\ead7"; }
 .icon-call:before { content: "\eab6"; }
 .icon-weixin:before { content: "\3488"; }
+.icon-camera:before { content: "\eabe"; }
+.icon-build:before { content: "\eaa2"; }
+.icon-accountbox:before { content: "\ea38"; }
+.icon-attachmoney:before { content: "\ea7d"; }
+.icon-bookmarkoutline:before { content: "\ea95"; }
+.icon-chatbubbleoutline:before { content: "\ead2"; }
+.icon-chat:before { content: "\ead0"; }
+.icon-cloud:before { content: "\eadf"; }
+.icon-desktopwindows:before { content: "\eb0f"; }
+.icon-desktopmac:before { content: "\eb0e"; }
+.icon-edit:before { content: "\eb31"; }
+.icon-favoriteoutline:before { content: "\eb4d"; }
+.icon-favorite:before { content: "\eb4c"; }
+.icon-exposureplus1:before { content: "\eb45"; }
+.icon-extension:before { content: "\eb48"; }
+.icon-flag:before { content: "\eb6f"; }
+.icon-fitnesscenter:before { content: "\eb6e"; }
+.icon-freebreakfast:before { content: "\eb9c"; }
+.icon-forum:before { content: "\eb97"; }
+.icon-goat:before { content: "\eba3"; }
+.icon-home:before { content: "\ebc2"; }
+.icon-hourglassempty:before { content: "\ebc5"; }
+.icon-localflorist:before { content: "\ec0a"; }
+.icon-locationon:before { content: "\ec24"; }
+.icon-locallibrary:before { content: "\ec10"; }
