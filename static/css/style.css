@@ -52,6 +52,34 @@ hr {
     margin-bottom: 20px;
 }
 
+.remodal-img h3 {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.remodal-img input {
+    float: left;
+    width: 480px;
+    height: 42px;
+    font-size: 20px;
+    padding: 6px;
+    color: #666;
+    
+}
+
+.remodal-img button {
+    float: right;
+    background: #607d8b;
+
+}
+
+.remodal-img button:hover{
+    float: right;
+    background: #607d8b;
+
+}
+
+
 body {
     background-color: lightslategray;
     font-family: sans-serif;
@@ -136,6 +164,7 @@ progress::-moz-progress-value {
     height:160px;
 }
 
+
 .container {
     position: relative;
     margin: 0 auto;
@@ -167,5 +196,21 @@ progress::-moz-progress-value {
 
 }
 
+.info-header:hover {
+    background-color: #d4dee4;
+}
+
+.info-header .unit-remove {
+    float: right;
+    margin-left: 20px;
+
+}
+
+.info-header .item-add {
+    float: right;
+    margin-left: 20px;
+    margin-right: 2px;
+    
+}
 
 

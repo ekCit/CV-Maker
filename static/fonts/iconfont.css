@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1471935781'); /* IE9*/
-  src: url('iconfont.eot?t=1471935781#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1471935781') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1471935781') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1471935781#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1471962438'); /* IE9*/
+  src: url('iconfont.eot?t=1471962438#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1471962438') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1471962438') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1471962438#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -56,3 +56,10 @@
 .icon-localflorist:before { content: "\ec0a"; }
 .icon-locationon:before { content: "\ec24"; }
 .icon-locallibrary:before { content: "\ec10"; }
+.icon-playlistadd:before { content: "\ecae"; }
+.icon-highlightremove:before { content: "\ebc0"; }
+.icon-delete:before { content: "\e61b"; }
+.icon-delete1:before { content: "\e610"; }
+.icon-delete2:before { content: "\e643"; }
+.icon-add:before { content: "\e620"; }
+.icon-add1:before { content: "\e676"; }

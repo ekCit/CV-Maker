@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>简历生成器</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
     <script src="static/js/script.js"></script>
 </head>
 
@@ -14,11 +17,17 @@
         <div class="side">
             <div class="me">
                 <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
                 <h1 id="username" contenteditable="true">ekCit</h1>
                 <h4 id="persona-tag" contenteditable="true">Python / Web / 互联网教育</h4>
             </div>
             <div class="profile info-unit">
-                <h2><i class="iconfont">&#xec88;</i> <span class="info-title">基本信息</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#xec88;</i> <span class="info-title">基本信息</span><span class="item-add"><i class="iconfont"></i></span><span class="unit-remove"><i class="iconfont"></i></span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
@@ -32,7 +41,7 @@
                 </ul>
             </div>
             <div class="contact info-unit">
-                <h2><i class="iconfont">&#xeab6;</i> <span class="info-title">联系方式</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#xeab6;</i> <span class="info-title">联系方式</span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
@@ -46,7 +55,7 @@
                 </ul>
             </div>
             <div class="skill info-unit">
-                <h2><i class="iconfont">&#xed1d;</i> <span class="info-title">技能点</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#xed1d;</i> <span class="info-title">技能点</span></h2>
                 <hr>
                 <div>
                     <ul class="progress-list">
@@ -70,16 +79,22 @@
                 </div>
             </div>
             <div class="code info-unit">
-                <h2><i class="iconfont">&#x3488;</i> <span class="info-title">个人微信</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#x3488;</i> <span class="info-title">个人微信</span></h2>
                 <hr>
                 <div class="weixin">
                     <img src="/static/image/weixin.png" alt="">
                 </div>
             </div>
+                <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="weixin-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
         </div>
         <div class="main">
             <div class="education info-unit right-list">
-                <h2><i class="iconfont">&#xebca;</i> <span class="info-title">教育经历</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#xebca;</i> <span class="info-title">教育经历</span></h2>
                 <hr>
                 <ul>
                     <li>
@@ -91,7 +106,7 @@
                 </ul>
             </div>
             <div class="work info-unit right-list">
-                <h2><i class="iconfont">&#xeac9;</i> <span class="info-title">工作经历</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#xeac9;</i> <span class="info-title">工作经历</span></h2>
                 <hr>
                 <ul>
                     <li>
@@ -107,7 +122,7 @@
                 </ul>
             </div>
             <div class="project info-unit right-list">
-                <h2><i class="iconfont">&#xeaf4;</i> <span class="info-title">个人项目</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#xeaf4;</i> <span class="info-title">个人项目</span></h2>
                 <hr>
                 <ul>
                     <li>
@@ -129,7 +144,7 @@
                         </p>
                     </li>
                     <li>
-                        <h3>如果项目太少，可以在实验楼上找项目做。</h3>
+                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
@@ -137,18 +152,14 @@
                 </ul>
             </div>
             <div class="aboutme info-unit right-paragraph">
-                <h2><i class="iconfont">&#xec0a;</i> <span class="info-title">自我评价</span></h2>
+                <h2 class="info-header"><i class="iconfont">&#xec0a;</i> <span class="info-title">自我评价</span></h2>
                 <hr>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                    
                 </p>
             </div>
         </div>
     </div>
-    <footer>
-    </footer>
 </body>
 
 </html>
