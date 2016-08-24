@@ -11,6 +11,7 @@ if (!String.prototype.format) {
   };
 }
 
+
 jQuery(document).ready(function($) {
     $(".left-label").attr('contenteditable', 'true');
     $(".label-value").attr('contenteditable', 'true');
@@ -81,16 +82,9 @@ jQuery(document).ready(function($) {
         }
 
     });
-
-    $('progress').mousedown(function(event) {
-        $(this).draggable = true;
+    $("progress").click(function(event) {
+        $(this).attr("value", event.offsetX/$(this).width()/0.8 * $(this).attr("max"));
     });
 
-    $('progress').mousedown(function(event) {
-        console.log()
-    });    
 
-    $('progress').mouseup(function(event) {
-        $(this).draggable = false;
-    });
 });
