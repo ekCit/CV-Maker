@@ -6,6 +6,15 @@
     url('/static/fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
+span {
+    display: inline-block;
+}
+
+.label-value{
+    width: 200px;
+    vertical-align: top;
+}
+
 .iconfont {
     font-family:"iconfont" !important;
     font-size:1.1em;font-style:normal;
@@ -36,6 +45,18 @@ h1, h2, h3, h4, h5 {
 .info-list, .progress-list{
     list-style: none;
     padding-left: 0px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.stack-list {
+    list-style: none;
+    padding-left: 0px;
+    line-height: 1.5;
+}
+
+.stack-list li {
+    margin-bottom: 12px;
 }
 
 .right-list li {
@@ -83,6 +104,7 @@ hr {
 body {
     background-color: lightslategray;
     font-family: sans-serif;
+    zoom: 80%;
 }
 
 footer {
@@ -129,7 +151,7 @@ progress::-moz-progress-value {
 }
 
 .weixin{
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: #e0eaf0;   
     position: relative;
     padding-top: 40px;
@@ -139,11 +161,6 @@ progress::-moz-progress-value {
 
 .weixin img{
     width: 200px;
-}
-
-.info-list {
-    font-size: 16px;
-    line-height: 2;
 }
 
 .left-label {
@@ -168,12 +185,9 @@ progress::-moz-progress-value {
 .container {
     position: relative;
     margin: 0 auto;
-    box-shadow: 1px 1px 4px gray;
-    padding: 40px;
-    padding-top: 55px;
 
     width: 1050px;
-    height: 1485px;
+    height: 1600px;
     background-color: white;
 
 }
@@ -181,6 +195,7 @@ progress::-moz-progress-value {
 .side {
     position: absolute;
     width: 360px;
+    height: 100%;
     background-color: whitesmoke;
     padding-left: 20px;
     padding-right: 20px;
@@ -191,8 +206,7 @@ progress::-moz-progress-value {
     position: relative;;
     margin-left: 360px;
     min-height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 
 }
 
@@ -200,10 +214,15 @@ progress::-moz-progress-value {
     background-color: #d4dee4;
 }
 
+.info-unit ul li:hover {
+    background-color: #d4dee4;
+}
+
 .info-header .unit-remove {
     float: right;
     margin-left: 20px;
     visibility: hidden;
+    cursor: pointer;
 
 }
 
@@ -212,6 +231,40 @@ progress::-moz-progress-value {
     margin-left: 20px;
     margin-right: 2px;
     visibility: hidden;
+    cursor: pointer;
+    
+}
+
+ .item-remove {
+    position: absolute;
+    right: 2px;
+    margin-right: 2px;
+    visibility: hidden;
+    cursor: pointer;
+    
+}
+
+ul li{
+    position: relative;
+}
+
+ .experience-list .item-remove {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    margin-right: 2px;
+    visibility: hidden;
+    cursor: pointer;
+    
+}
+
+ .stack-list .item-remove {
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    margin-right: 2px;
+    visibility: hidden;
+    cursor: pointer;
     
 }
 

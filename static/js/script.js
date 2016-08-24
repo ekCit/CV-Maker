@@ -15,9 +15,20 @@ jQuery(document).ready(function($) {
     $(".left-label").attr('contenteditable', 'true');
     $(".label-value").attr('contenteditable', 'true');
     $(".info-title").attr('contenteditable', 'true');
-    $(".right-list h3").attr('contenteditable', 'true');
-    $(".right-list p").attr('contenteditable', 'true');
+    $("h3").attr('contenteditable', 'true');
+    $("p").attr('contenteditable', 'true');
     $(".right-paragraph p").attr('contenteditable', 'true');
+    $("#username").attr('contenteditable', 'true');
+    $("#persona-tag").attr('contenteditable', 'true');
+    $(".info-unit ul li").append('<span class="item-remove"><i class="iconfont">&#xe61b;</i></span>');
+    
+    $(".info-unit").filter(function(index) {
+        return ($(this).children('ul').length);
+    }).children("h2").append('<span class="item-add"><i class="iconfont">&#xecae;</i></span>');
+
+    $(".info-unit h2").append('<span class="unit-remove"><i class="iconfont">&#xe61b;</i></span>');
+    
+
     var portrait_modal = $('[data-remodal-id=portrait-modal]').remodal();
     $(".portrait").click(function(event) {
         portrait_modal.open();
@@ -44,8 +55,21 @@ jQuery(document).ready(function($) {
         $(this).children('.item-add').css('visibility', 'hidden');
     });
 
+    $('.info-unit ul li').hover(function() {
+        /* Stuff to do when the mouse enters the element */
+        $(this).children('.item-remove').css('visibility', 'visible');
+
+    }, function() {
+        /* Stuff to do when the mouse leaves the element */
+        $(this).children('.item-remove').css('visibility', 'hidden');
+    });
+
     $('.unit-remove').click(function(event) {
         $(this).closest(".info-unit").remove();
+    });
+
+    $('.item-remove').click(function(event) {
+        $(this).closest("li").remove();
     });
 
     $('.item-add').click(function(event) {
@@ -56,5 +80,17 @@ jQuery(document).ready(function($) {
             list.append(clone);
         }
 
+    });
+
+    $('progress').mousedown(function(event) {
+        $(this).draggable = true;
+    });
+
+    $('progress').mousedown(function(event) {
+        console.log()
+    });    
+
+    $('progress').mouseup(function(event) {
+        $(this).draggable = false;
     });
 });
