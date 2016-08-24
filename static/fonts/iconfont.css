@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1471962438'); /* IE9*/
-  src: url('iconfont.eot?t=1471962438#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1471962438') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1471962438') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1471962438#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1472035662'); /* IE9*/
+  src: url('iconfont.eot?t=1472035662#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1472035662') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1472035662') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1472035662#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -63,3 +63,6 @@
 .icon-delete2:before { content: "\e643"; }
 .icon-add:before { content: "\e620"; }
 .icon-add1:before { content: "\e676"; }
+.icon-trophy:before { content: "\e816"; }
+.icon-trophy1:before { content: "\e6fc"; }
+.icon-trophy2:before { content: "\e80b"; }
