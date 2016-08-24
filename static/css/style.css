@@ -1,17 +1,9 @@
 @font-face {font-family: 'iconfont';
-<<<<<<< HEAD
     src: url('../fonts/iconfont.eot'); /* IE9*/
     src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
     url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
-=======
-    src: url('/static/fonts/iconfont.eot'); /* IE9*/
-    src: url('/static/fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('/static/fonts/iconfont.woff') format('woff'), /* chrome、firefox */
-    url('/static/fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('/static/fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
->>>>>>> 6ba8738017fdb98f2f55e5eafa755935547d0374
 }
 
 span {
