@@ -21,13 +21,13 @@ jQuery(document).ready(function($) {
     $(".right-paragraph p").attr('contenteditable', 'true');
     $("#username").attr('contenteditable', 'true');
     $("#persona-tag").attr('contenteditable', 'true');
-    $(".info-unit ul li").append('<span class="item-remove"><i class="iconfont">&#xe61b;</i></span>');
+    $(".info-unit ul li").append('<span class="item-remove"><i class="iconfont icon-delete"></i></span>');
     
     $(".info-unit").filter(function(index) {
         return ($(this).children('ul').length);
-    }).children("h2").append('<span class="item-add"><i class="iconfont">&#xecae;</i></span>');
+    }).children("h2").append('<span class="item-add"><i class="iconfont icon-playlistadd"></i></span>');
 
-    $(".info-unit h2").append('<span class="unit-remove"><i class="iconfont">&#xe61b;</i></span>');
+    $(".info-unit h2").append('<span class="unit-remove"><i class="iconfont icon-delete"></i></span>');
     
 
     var portrait_modal = $('[data-remodal-id=portrait-modal]').remodal();
@@ -85,6 +85,6 @@ jQuery(document).ready(function($) {
     $("progress").click(function(event) {
         $(this).attr("value", event.offsetX/$(this).width()/0.8 * $(this).attr("max"));
     });
-
+    // $("*").removeAttr('contenteditable');
 
 });

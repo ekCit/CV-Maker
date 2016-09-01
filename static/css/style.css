@@ -6,6 +6,25 @@
     url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
+
+.icon-work:before { content: "\eac9"; }
+.icon-project:before { content: "\eaf4"; }
+.icon-phone:before { content: "\ec7a"; }
+.icon-stars:before { content: "\ed32"; }
+.icon-star:before { content: "\ed1d"; }
+.icon-person:before { content: "\ec88"; }
+.icon-librarybooks:before { content: "\ebf9"; }
+.icon-education:before { content: "\ebca"; }
+.icon-create:before { content: "\eaf8"; }
+.icon-call:before { content: "\eab6"; }
+.icon-weixin:before { content: "\3488"; }
+.icon-build:before { content: "\eaa2"; }
+.icon-edit:before { content: "\eb31"; }
+.icon-flower:before { content: "\ec0a"; }
+.icon-playlistadd:before { content: "\ecae"; }
+.icon-delete:before { content: "\e61b"; }
+.icon-trophy:before { content: "\e80b"; }
+
 span {
     display: inline-block;
 }
